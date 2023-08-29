@@ -10,7 +10,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 app.get("/", (req, res) => {
-  res.send("Hola bb, ya que contigo no sirve la labia");
+  sendAddedFilesToProcess(req.body)
+  res.send("Peticion POST");
 });
 
 app.post('/message', (req, res) => {
