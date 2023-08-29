@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 
-app.get("/", (req, res) => {
+app.post("/", (req, res) => {
   sendAddedFilesToProcess(req.body)
   res.send("Peticion POST");
 });
